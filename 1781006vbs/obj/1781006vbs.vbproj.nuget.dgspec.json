@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\vs\\1781006vbs\\1781006vbs\\1781006vbs.vbproj": {}
+    "F:\\vs\\VBS\\1781006vbs\\1781006vbs.vbproj": {}
   },
   "projects": {
-    "F:\\vs\\1781006vbs\\1781006vbs\\1781006vbs.vbproj": {
+    "F:\\vs\\VBS\\1781006vbs\\1781006vbs.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\vs\\1781006vbs\\1781006vbs\\1781006vbs.vbproj",
+        "projectUniqueName": "F:\\vs\\VBS\\1781006vbs\\1781006vbs.vbproj",
         "projectName": "1781006vbs",
-        "projectPath": "F:\\vs\\1781006vbs\\1781006vbs\\1781006vbs.vbproj",
+        "projectPath": "F:\\vs\\VBS\\1781006vbs\\1781006vbs.vbproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "F:\\vs\\1781006vbs\\1781006vbs\\obj\\",
+        "outputPath": "F:\\vs\\VBS\\1781006vbs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
