@@ -1,4 +1,7 @@
 # VBS
+
+# Run DB
+# docker-compose up --d
 # Link tài liệu môn học
 https://drive.google.com/drive/u/1/folders/1ULJndXUagn6z1dDCcCyE18m9xJRohZl2
 
