@@ -2,7 +2,7 @@
     Dim dsNhanVien As DataTable
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim sql As String = "Select NV_ID, TK_ID, NV_TenDangNhap, TK_TenDangNhap, TK_MatKhau, TK_Loai, NV_HoTen, NV_Email, NV_DiaChi, NV_Loai from NhanVien, TaiKhoan where NV_TenDangNhap like TK_TenDangNhap"
+        Dim sql As String = "Select * from customer"
         dsNhanVien = XL_DuLieu.DocDuLieu(sql)
 
         DataGridView1.DataSource = dsNhanVien
