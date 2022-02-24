@@ -73,8 +73,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="category.vb" />
-    <Compile Include="customer.vb" />
+    <Compile Include="model\category.vb" />
+    <Compile Include="model\customer.vb" />
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
@@ -124,7 +124,7 @@
     <Compile Include="frmNhanVien.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="issue.vb" />
+    <Compile Include="model\issue.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -147,15 +147,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="orderbill.vb" />
-    <Compile Include="orderdescription.vb" />
-    <Compile Include="permitsion.vb" />
-    <Compile Include="product.vb" />
-    <Compile Include="receipt.vb" />
+    <Compile Include="model\orderbill.vb" />
+    <Compile Include="model\orderdescription.vb" />
+    <Compile Include="model\permitsion.vb" />
+    <Compile Include="model\product.vb" />
+    <Compile Include="model\receipt.vb" />
     <Compile Include="Util.vb" />
-    <Compile Include="warehouse.vb" />
-    <Compile Include="waybill.vb" />
+    <Compile Include="model\warehouse.vb" />
+    <Compile Include="model\waybill.vb" />
     <Compile Include="XL_DuLieu.vb" />
+    <Compile Include="_1781006VBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1781006VBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1781006VBDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1781006VBDataSet1.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -203,6 +213,28 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="_1781006VBDataSet.xsc">
+      <DependentUpon>_1781006VBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006VBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1781006VBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1781006VBDataSet.xss">
+      <DependentUpon>_1781006VBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006VBDataSet1.xsc">
+      <DependentUpon>_1781006VBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006VBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1781006VBDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1781006VBDataSet1.xss">
+      <DependentUpon>_1781006VBDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="db\Database1.accdb">
