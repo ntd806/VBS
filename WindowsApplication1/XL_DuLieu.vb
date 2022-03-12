@@ -3,7 +3,8 @@ Imports System.Data.SqlClient
 
 
 Module XL_DuLieu
-    Public ChuoiKetNoi As String = "Provider=SQLOLEDB;Data Source=DESKTOP-5RF1ETU;Initial Catalog=VB;Integrated Security=SSPI"
+    '/* Data Source=DESKTOP-M6H7GKA\SQLEXPRESS;Initial Catalog=1781006u1;Integrated Security=True*/
+    Public ChuoiKetNoi As String = "Provider=SQLOLEDB;Data Source=DESKTOP-M6H7GKA\SQLEXPRESS;Initial Catalog=1781006u1;Integrated Security=SSPI"
 
     Public Function DocDuLieu(ByVal sql As String) As DataTable
         Dim adapter As OleDbDataAdapter = New OleDbDataAdapter(sql, ChuoiKetNoi)
