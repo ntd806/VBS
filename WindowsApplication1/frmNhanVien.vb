@@ -12,12 +12,12 @@
 
     Public Function getUser() As customer
         Dim nhanvien As New customer
-        nhanvien.id = Integer.Parse(txtId.Text)
+        nhanvien.id = Double.Parse(txtId.Text)
         nhanvien.usename = txtUsername.Text
         nhanvien.phone = txtPhone.Text
         nhanvien.role = txtRole.Text
-        nhanvien.block = Integer.Parse(txtIsblock.Text)
-
+        nhanvien.block = Double.Parse(txtIsblock.Text)
+        nhanvien.pass = Util.getHash(txtPassword.Text)
         Return nhanvien
     End Function
 
@@ -28,8 +28,26 @@
         kh("phone") = nhanvien.phone
         kh("role") = nhanvien.role
         kh("is_block") = nhanvien.block
+        kh("password") = nhanvien.pass
         kh("username") = nhanvien.usename
         dsNhanVien.Rows.Add(kh)
         XL_DuLieu.GhiDuLieu("customer", dsNhanVien)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim nhanvien = getUser()
+        Dim sql As String = "UPDATE customer set is_block = " + nhanvien.block + " where id = " + nhanvien.id
+        MessageBox.Show(XL_DuLieu.ThucHienLenh(sql))
+        'If (XL_DuLieu.ThucHienLenh(sql) = -1) Then
+        '    Dim frm As New Form2()
+        '    frm.Show()
+        '    Me.Hide()
+        'Else
+        '    MessageBox.Show("Sai mật khẩu hoặc tài khoản")
+        'End If
     End Sub
 End Class
