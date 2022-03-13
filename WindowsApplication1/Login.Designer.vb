@@ -22,6 +22,7 @@ Partial Class login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtUser = New System.Windows.Forms.TextBox()
@@ -29,71 +30,100 @@ Partial Class login
         Me.btLogin = New System.Windows.Forms.Button()
         Me.txtRole = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me._1781006u1DataSet1 = New WindowsApplication1._1781006u1DataSet1()
+        Me.PermitionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PermitionTableAdapter = New WindowsApplication1._1781006u1DataSet1TableAdapters.permitionTableAdapter()
+        CType(Me._1781006u1DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PermitionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(308, 49)
+        Me.Label1.Location = New System.Drawing.Point(231, 40)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 16)
+        Me.Label1.Size = New System.Drawing.Size(57, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "UserName"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(314, 150)
+        Me.Label2.Location = New System.Drawing.Point(236, 122)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 16)
+        Me.Label2.Size = New System.Drawing.Size(53, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Password"
         '
         'txtUser
         '
-        Me.txtUser.Location = New System.Drawing.Point(311, 82)
+        Me.txtUser.Location = New System.Drawing.Point(233, 67)
+        Me.txtUser.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(252, 22)
+        Me.txtUser.Size = New System.Drawing.Size(190, 20)
         Me.txtUser.TabIndex = 2
         '
         'txtPass
         '
-        Me.txtPass.Location = New System.Drawing.Point(311, 204)
+        Me.txtPass.Location = New System.Drawing.Point(233, 166)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(252, 22)
+        Me.txtPass.Size = New System.Drawing.Size(190, 20)
         Me.txtPass.TabIndex = 3
         '
         'btLogin
         '
-        Me.btLogin.Location = New System.Drawing.Point(479, 325)
+        Me.btLogin.Location = New System.Drawing.Point(359, 264)
+        Me.btLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btLogin.Name = "btLogin"
-        Me.btLogin.Size = New System.Drawing.Size(75, 23)
+        Me.btLogin.Size = New System.Drawing.Size(56, 19)
         Me.btLogin.TabIndex = 4
         Me.btLogin.Text = "Login"
         Me.btLogin.UseVisualStyleBackColor = True
         '
         'txtRole
         '
+        Me.txtRole.DataSource = Me.PermitionBindingSource
+        Me.txtRole.DisplayMember = "name"
         Me.txtRole.FormattingEnabled = True
-        Me.txtRole.Location = New System.Drawing.Point(311, 277)
+        Me.txtRole.Location = New System.Drawing.Point(233, 225)
+        Me.txtRole.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtRole.Name = "txtRole"
-        Me.txtRole.Size = New System.Drawing.Size(121, 24)
+        Me.txtRole.Size = New System.Drawing.Size(92, 21)
         Me.txtRole.TabIndex = 5
+        Me.txtRole.ValueMember = "name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(308, 248)
+        Me.Label3.Location = New System.Drawing.Point(231, 202)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 20)
+        Me.Label3.Size = New System.Drawing.Size(61, 13)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Chức Danh"
         '
+        '_1781006u1DataSet1
+        '
+        Me._1781006u1DataSet1.DataSetName = "_1781006u1DataSet1"
+        Me._1781006u1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PermitionBindingSource
+        '
+        Me.PermitionBindingSource.DataMember = "permition"
+        Me.PermitionBindingSource.DataSource = Me._1781006u1DataSet1
+        '
+        'PermitionTableAdapter
+        '
+        Me.PermitionTableAdapter.ClearBeforeFill = True
+        '
         'login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtRole)
         Me.Controls.Add(Me.btLogin)
@@ -101,8 +131,11 @@ Partial Class login
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "login"
         Me.Text = "login"
+        CType(Me._1781006u1DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PermitionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -115,4 +148,7 @@ Partial Class login
     Friend WithEvents btLogin As Button
     Friend WithEvents txtRole As ComboBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents _1781006u1DataSet1 As _1781006u1DataSet1
+    Friend WithEvents PermitionBindingSource As BindingSource
+    Friend WithEvents PermitionTableAdapter As _1781006u1DataSet1TableAdapters.permitionTableAdapter
 End Class

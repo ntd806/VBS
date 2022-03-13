@@ -14,4 +14,10 @@
             MessageBox.Show("Sai mật khẩu hoặc tài khoản")
         End If
     End Sub
+
+    Private Sub login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the '_1781006u1DataSet1.permition' table. You can move, or remove it, as needed.
+        Me.PermitionTableAdapter.Fill(Me._1781006u1DataSet1.permition)
+
+    End Sub
 End Class
