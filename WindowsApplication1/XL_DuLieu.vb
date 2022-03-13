@@ -49,18 +49,18 @@ Module XL_DuLieu
     End Function
 
     Private Sub CapNhatMaSo(ByVal sender As Object, ByVal e As OleDbRowUpdatedEventArgs)
-        Dim Ket_noi As OleDbConnection = e.Command.Connection
-        If e.StatementType = StatementType.Insert Then
-            Dim Lenh As OleDbCommand = New OleDbCommand("Select @@IDENTITY", Ket_noi)
-            Dim ma_so As Integer = Integer.Parse(Lenh.ExecuteScalar())
-            e.Row(0) = ma_so
-        End If
+        'Dim Ket_noi As OleDbConnection = e.Command.Connection
+        'If e.StatementType = StatementType.Insert Then
+        '    Dim Lenh As OleDbCommand = New OleDbCommand("Select @@IDENTITY", Ket_noi)
+        '    Dim ma_so As Integer = Integer.Parse(Lenh.ExecuteScalar())
+        '    e.Row(0) = ma_so
+        'End If
     End Sub
 
     Public Sub GhiDuLieu1(ByVal table As String, ByVal dt As DataTable)
         Dim adapter As OleDbDataAdapter = New OleDbDataAdapter("Select * from " + table, ChuoiKetNoi)
         Dim builder As OleDbCommandBuilder = New OleDbCommandBuilder(adapter)
-        AddHandler adapter.RowUpdated, AddressOf CapNhatMaSo1
+        ' AddHandler adapter.RowUpdated, AddressOf CapNhatMaSo1
         adapter.Update(dt)
     End Sub
 

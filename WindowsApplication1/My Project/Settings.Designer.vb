@@ -53,6 +53,17 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-M6H7GKA\SQLEXPRESS;Initial Catalog=1781006u1;Integrated Secur"& _ 
+            "ity=True")>  _
+        Public ReadOnly Property _1781006u1ConnectionString() As String
+            Get
+                Return CType(Me("_1781006u1ConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

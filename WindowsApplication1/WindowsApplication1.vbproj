@@ -128,6 +128,7 @@
     <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Loginfor.vb" />
     <Compile Include="Model\category.vb" />
     <Compile Include="Model\customer.vb" />
     <Compile Include="Model\issue.vb" />
@@ -156,6 +157,11 @@
     </Compile>
     <Compile Include="Util.vb" />
     <Compile Include="XL_DuLieu.vb" />
+    <Compile Include="_1781006u1DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1781006u1DataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -203,6 +209,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="_1781006u1DataSet.xsc">
+      <DependentUpon>_1781006u1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1781006u1DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1781006u1DataSet.xss">
+      <DependentUpon>_1781006u1DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="db\Database1.accdb">
