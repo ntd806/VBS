@@ -5,7 +5,7 @@
         Loginfor.Role = txtRole.Text
         'MessageBox.Show(pass.ToString())
         'Dim sql As String = "INSERT INTO customer (username, password) VALUES ('" + Loginfor.Username + "','" + Loginfor.Password + "')"
-        Dim sql As String = "SELECT * FROM customer where username= '" + Loginfor.Username + "' and password = '" + Loginfor.Password + "'"
+        Dim sql As String = "SELECT * FROM customer where username= '" + Loginfor.Username + "' and password = '" + Loginfor.Password + "' and role = '" + Loginfor.Role + "'"
         If (XL_DuLieu.ThucHienLenh(Sql) = -1) Then
             Dim frm As New Form2()
             frm.Show()
