@@ -167,6 +167,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_1781006u1DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_1781006u1DataSet21.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1781006u1DataSet21.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -235,6 +240,17 @@
     </None>
     <None Include="_1781006u1DataSet1.xss">
       <DependentUpon>_1781006u1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet21.xsc">
+      <DependentUpon>_1781006u1DataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1781006u1DataSet21.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1781006u1DataSet21.xss">
+      <DependentUpon>_1781006u1DataSet21.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
