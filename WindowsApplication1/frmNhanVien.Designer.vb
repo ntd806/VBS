@@ -48,13 +48,13 @@ Partial Class frmNhanVien
         Me.PermitionTableAdapter = New WindowsApplication1._1781006u1DataSetTableAdapters.permitionTableAdapter()
         Me.ChonTableAdapter = New WindowsApplication1._1781006u1DataSet2TableAdapters.chonTableAdapter()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.txtOldPass = New System.Windows.Forms.TextBox()
-        Me.txtNewPass = New System.Windows.Forms.TextBox()
-        Me.txtConfirm = New System.Windows.Forms.TextBox()
-        Me.btResetPassword = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btResetPassword = New System.Windows.Forms.Button()
+        Me.txtConfirm = New System.Windows.Forms.TextBox()
+        Me.txtNewPass = New System.Windows.Forms.TextBox()
+        Me.txtOldPass = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.ChonBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,7 +68,7 @@ Partial Class frmNhanVien
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(16, 15)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(713, 348)
@@ -77,7 +77,7 @@ Partial Class frmNhanVien
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(217, 20)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 6
@@ -87,7 +87,7 @@ Partial Class frmNhanVien
         'txtId
         '
         Me.txtId.Location = New System.Drawing.Point(19, 62)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(4)
         Me.txtId.Name = "txtId"
         Me.txtId.Size = New System.Drawing.Size(132, 22)
         Me.txtId.TabIndex = 7
@@ -95,7 +95,7 @@ Partial Class frmNhanVien
         'txtUsername
         '
         Me.txtUsername.Location = New System.Drawing.Point(19, 146)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(132, 22)
         Me.txtUsername.TabIndex = 7
@@ -103,7 +103,7 @@ Partial Class frmNhanVien
         'txtPassword
         '
         Me.txtPassword.Location = New System.Drawing.Point(18, 224)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(132, 22)
         Me.txtPassword.TabIndex = 7
@@ -111,7 +111,7 @@ Partial Class frmNhanVien
         'txtPhone
         '
         Me.txtPhone.Location = New System.Drawing.Point(19, 304)
-        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.Size = New System.Drawing.Size(132, 22)
         Me.txtPhone.TabIndex = 7
@@ -146,7 +146,7 @@ Partial Class frmNhanVien
         Me.txtIsblock.DisplayMember = "chon"
         Me.txtIsblock.FormattingEnabled = True
         Me.txtIsblock.Location = New System.Drawing.Point(177, 372)
-        Me.txtIsblock.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtIsblock.Margin = New System.Windows.Forms.Padding(4)
         Me.txtIsblock.Name = "txtIsblock"
         Me.txtIsblock.Size = New System.Drawing.Size(160, 24)
         Me.txtIsblock.TabIndex = 9
@@ -196,7 +196,7 @@ Partial Class frmNhanVien
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(217, 224)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(100, 28)
         Me.Button4.TabIndex = 18
@@ -206,7 +206,7 @@ Partial Class frmNhanVien
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(217, 163)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(100, 28)
         Me.Button3.TabIndex = 17
@@ -216,7 +216,7 @@ Partial Class frmNhanVien
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(217, 89)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(100, 28)
         Me.Button2.TabIndex = 16
@@ -290,29 +290,32 @@ Partial Class frmNhanVien
         Me.Panel2.Size = New System.Drawing.Size(363, 418)
         Me.Panel2.TabIndex = 9
         '
-        'txtOldPass
+        'Label8
         '
-        Me.txtOldPass.Location = New System.Drawing.Point(16, 71)
-        Me.txtOldPass.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtOldPass.Name = "txtOldPass"
-        Me.txtOldPass.Size = New System.Drawing.Size(132, 22)
-        Me.txtOldPass.TabIndex = 21
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(13, 224)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(114, 16)
+        Me.Label8.TabIndex = 26
+        Me.Label8.Text = "Nhập lại mật khẩu"
         '
-        'txtNewPass
+        'Label3
         '
-        Me.txtNewPass.Location = New System.Drawing.Point(16, 163)
-        Me.txtNewPass.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtNewPass.Name = "txtNewPass"
-        Me.txtNewPass.Size = New System.Drawing.Size(132, 22)
-        Me.txtNewPass.TabIndex = 22
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(13, 132)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(86, 16)
+        Me.Label3.TabIndex = 25
+        Me.Label3.Text = "Mật khẩu mới"
         '
-        'txtConfirm
+        'Label2
         '
-        Me.txtConfirm.Location = New System.Drawing.Point(16, 254)
-        Me.txtConfirm.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtConfirm.Name = "txtConfirm"
-        Me.txtConfirm.Size = New System.Drawing.Size(132, 22)
-        Me.txtConfirm.TabIndex = 23
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(13, 32)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(78, 16)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "Mật khẩu cũ"
         '
         'btResetPassword
         '
@@ -324,42 +327,39 @@ Partial Class frmNhanVien
         Me.btResetPassword.Text = "Đổi mật khẩu"
         Me.btResetPassword.UseVisualStyleBackColor = True
         '
-        'Label2
+        'txtConfirm
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 32)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(98, 20)
-        Me.Label2.TabIndex = 24
-        Me.Label2.Text = "Mật khẩu cũ"
+        Me.txtConfirm.Location = New System.Drawing.Point(16, 254)
+        Me.txtConfirm.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtConfirm.Name = "txtConfirm"
+        Me.txtConfirm.Size = New System.Drawing.Size(132, 22)
+        Me.txtConfirm.TabIndex = 23
         '
-        'Label3
+        'txtNewPass
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 132)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 20)
-        Me.Label3.TabIndex = 25
-        Me.Label3.Text = "Mật khẩu mới"
+        Me.txtNewPass.Location = New System.Drawing.Point(16, 163)
+        Me.txtNewPass.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNewPass.Name = "txtNewPass"
+        Me.txtNewPass.Size = New System.Drawing.Size(132, 22)
+        Me.txtNewPass.TabIndex = 22
         '
-        'Label8
+        'txtOldPass
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(13, 224)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(143, 20)
-        Me.Label8.TabIndex = 26
-        Me.Label8.Text = "Nhập lại mật khẩu"
+        Me.txtOldPass.Location = New System.Drawing.Point(16, 71)
+        Me.txtOldPass.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtOldPass.Name = "txtOldPass"
+        Me.txtOldPass.Size = New System.Drawing.Size(132, 22)
+        Me.txtOldPass.TabIndex = 21
         '
         'frmNhanVien
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1311, 605)
+        Me.ClientSize = New System.Drawing.Size(1636, 605)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmNhanVien"
         Me.Text = "Form3"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
