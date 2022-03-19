@@ -73,20 +73,17 @@
     Private Sub btResetPassword_Click(sender As Object, e As EventArgs) Handles btResetPassword.Click
         Dim sql1 As String = "SELECT * FROM customer where username= '" + Loginfor.Username + "' and password = '" + Loginfor.Password + "' and role = '" + Loginfor.Role + "'"
         Dim nhanvien = getUser()
-        Dim newPass As String
         If (txtNewPass.Text = String.Empty Or txtOldPass.Text = String.Empty Or txtConfirm.Text = String.Empty) Then
             MessageBox.Show("Khong duoc de trong cach truong")
         Else
-
             If String.Compare(txtNewPass.Text, txtConfirm.Text) = 0 Then
             Else
-                newPass = Util.getHash(txtNewPass.Text)
                 MessageBox.Show("Mat khau xac nhan va mat khau moi phai giong nhau")
             End If
         End If
 
-        Dim sql As String = "UPDATE customer set password = " + newPass + " where id = " + nhanvien.id.ToString()
-        If (XL_DuLieu.ThucHienLenh(sql1) = -1) Then
+        Dim sql As String = "UPDATE customer set password = " + Util.getHash(txtNewPass.Text) + " where id = " + nhanvien.id.ToString()
+        If (XL_DuLieu.ThucHienLenh(sql1) = 1) Then
             Dim frm As frmNhanVien = New frmNhanVien()
             frm.WindowState = FormWindowState.Maximized
             Me.Hide()
