@@ -24,7 +24,7 @@ Partial Class frmNhanVien
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btAdd = New System.Windows.Forms.Button()
         Me.txtId = New System.Windows.Forms.TextBox()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
@@ -37,9 +37,9 @@ Partial Class frmNhanVien
         Me.txtRole = New System.Windows.Forms.ComboBox()
         Me.PermitionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me._1781006u1DataSet = New WindowsApplication1._1781006u1DataSet()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btblock = New System.Windows.Forms.Button()
+        Me.btDelete = New System.Windows.Forms.Button()
+        Me.btEdit = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -74,15 +74,15 @@ Partial Class frmNhanVien
         Me.DataGridView1.Size = New System.Drawing.Size(713, 348)
         Me.DataGridView1.TabIndex = 0
         '
-        'Button1
+        'btAdd
         '
-        Me.Button1.Location = New System.Drawing.Point(217, 20)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 28)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Thêm"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btAdd.Location = New System.Drawing.Point(217, 20)
+        Me.btAdd.Margin = New System.Windows.Forms.Padding(4)
+        Me.btAdd.Name = "btAdd"
+        Me.btAdd.Size = New System.Drawing.Size(100, 28)
+        Me.btAdd.TabIndex = 6
+        Me.btAdd.Text = "Thêm"
+        Me.btAdd.UseVisualStyleBackColor = True
         '
         'txtId
         '
@@ -121,16 +121,16 @@ Partial Class frmNhanVien
         Me.Panel1.Controls.Add(Me.txtIsblock)
         Me.Panel1.Controls.Add(Me.b)
         Me.Panel1.Controls.Add(Me.txtRole)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.btblock)
+        Me.Panel1.Controls.Add(Me.btDelete)
+        Me.Panel1.Controls.Add(Me.btEdit)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.txtId)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btAdd)
         Me.Panel1.Controls.Add(Me.txtUsername)
         Me.Panel1.Controls.Add(Me.txtPhone)
         Me.Panel1.Controls.Add(Me.txtPassword)
@@ -193,35 +193,35 @@ Partial Class frmNhanVien
         Me._1781006u1DataSet.DataSetName = "_1781006u1DataSet"
         Me._1781006u1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Button4
+        'btblock
         '
-        Me.Button4.Location = New System.Drawing.Point(217, 224)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(100, 28)
-        Me.Button4.TabIndex = 18
-        Me.Button4.Text = "Khóa tài khoản"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btblock.Location = New System.Drawing.Point(217, 224)
+        Me.btblock.Margin = New System.Windows.Forms.Padding(4)
+        Me.btblock.Name = "btblock"
+        Me.btblock.Size = New System.Drawing.Size(100, 28)
+        Me.btblock.TabIndex = 18
+        Me.btblock.Text = "Khóa tài khoản"
+        Me.btblock.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btDelete
         '
-        Me.Button3.Location = New System.Drawing.Point(217, 163)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 28)
-        Me.Button3.TabIndex = 17
-        Me.Button3.Text = "Xóa"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btDelete.Location = New System.Drawing.Point(217, 163)
+        Me.btDelete.Margin = New System.Windows.Forms.Padding(4)
+        Me.btDelete.Name = "btDelete"
+        Me.btDelete.Size = New System.Drawing.Size(100, 28)
+        Me.btDelete.TabIndex = 17
+        Me.btDelete.Text = "Xóa"
+        Me.btDelete.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btEdit
         '
-        Me.Button2.Location = New System.Drawing.Point(217, 89)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 28)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Sửa"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btEdit.Location = New System.Drawing.Point(217, 89)
+        Me.btEdit.Margin = New System.Windows.Forms.Padding(4)
+        Me.btEdit.Name = "btEdit"
+        Me.btEdit.Size = New System.Drawing.Size(100, 28)
+        Me.btEdit.TabIndex = 16
+        Me.btEdit.Text = "Sửa"
+        Me.btEdit.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -376,16 +376,16 @@ Partial Class frmNhanVien
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btAdd As Button
     Friend WithEvents txtId As TextBox
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtPhone As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents txtRole As ComboBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btblock As Button
+    Friend WithEvents btDelete As Button
+    Friend WithEvents btEdit As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
