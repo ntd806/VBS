@@ -31,7 +31,9 @@ Partial Class Form2
         Me.DanhMucToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DanhSachMonAnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChiNhanhToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SanPhamToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ThongTinToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LoaiSanPhamToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -59,7 +61,7 @@ Partial Class Form2
         '
         'QuanLyToolStripMenuItem
         '
-        Me.QuanLyToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KhachHangToolStripMenuItem, Me.NhanVienToolStripMenuItem, Me.DanhMucToolStripMenuItem, Me.DanhSachMonAnToolStripMenuItem, Me.ChiNhanhToolStripMenuItem})
+        Me.QuanLyToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KhachHangToolStripMenuItem, Me.NhanVienToolStripMenuItem, Me.DanhMucToolStripMenuItem, Me.DanhSachMonAnToolStripMenuItem, Me.ChiNhanhToolStripMenuItem, Me.SanPhamToolStripMenuItem, Me.LoaiSanPhamToolStripMenuItem})
         Me.QuanLyToolStripMenuItem.Name = "QuanLyToolStripMenuItem"
         Me.QuanLyToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.QuanLyToolStripMenuItem.Text = "Quan ly"
@@ -67,38 +69,50 @@ Partial Class Form2
         'KhachHangToolStripMenuItem
         '
         Me.KhachHangToolStripMenuItem.Name = "KhachHangToolStripMenuItem"
-        Me.KhachHangToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.KhachHangToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.KhachHangToolStripMenuItem.Text = "Khach hang"
         '
         'NhanVienToolStripMenuItem
         '
         Me.NhanVienToolStripMenuItem.Name = "NhanVienToolStripMenuItem"
-        Me.NhanVienToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.NhanVienToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NhanVienToolStripMenuItem.Text = "Nhan vien"
         '
         'DanhMucToolStripMenuItem
         '
         Me.DanhMucToolStripMenuItem.Name = "DanhMucToolStripMenuItem"
-        Me.DanhMucToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.DanhMucToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DanhMucToolStripMenuItem.Text = "Danh muc"
         '
         'DanhSachMonAnToolStripMenuItem
         '
         Me.DanhSachMonAnToolStripMenuItem.Name = "DanhSachMonAnToolStripMenuItem"
-        Me.DanhSachMonAnToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.DanhSachMonAnToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DanhSachMonAnToolStripMenuItem.Text = "Menu tong"
         '
         'ChiNhanhToolStripMenuItem
         '
         Me.ChiNhanhToolStripMenuItem.Name = "ChiNhanhToolStripMenuItem"
-        Me.ChiNhanhToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.ChiNhanhToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ChiNhanhToolStripMenuItem.Text = "Chi nhanh"
+        '
+        'SanPhamToolStripMenuItem
+        '
+        Me.SanPhamToolStripMenuItem.Name = "SanPhamToolStripMenuItem"
+        Me.SanPhamToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SanPhamToolStripMenuItem.Text = "San Pham"
         '
         'ThongTinToolStripMenuItem
         '
         Me.ThongTinToolStripMenuItem.Name = "ThongTinToolStripMenuItem"
-        Me.ThongTinToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
+        Me.ThongTinToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
         Me.ThongTinToolStripMenuItem.Text = "Thong tin"
+        '
+        'LoaiSanPhamToolStripMenuItem
+        '
+        Me.LoaiSanPhamToolStripMenuItem.Name = "LoaiSanPhamToolStripMenuItem"
+        Me.LoaiSanPhamToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LoaiSanPhamToolStripMenuItem.Text = "Loai san pham"
         '
         'Form2
         '
@@ -128,4 +142,6 @@ Partial Class Form2
     Friend WithEvents DanhSachMonAnToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ChiNhanhToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BanHangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SanPhamToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LoaiSanPhamToolStripMenuItem As ToolStripMenuItem
 End Class

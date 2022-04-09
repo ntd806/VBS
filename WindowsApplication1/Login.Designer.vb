@@ -29,12 +29,12 @@ Partial Class login
         Me.txtPass = New System.Windows.Forms.TextBox()
         Me.btLogin = New System.Windows.Forms.Button()
         Me.txtRole = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me._1781006u1DataSet1 = New WindowsApplication1._1781006u1DataSet1()
         Me.PermitionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me._1781006u1DataSet1 = New WindowsApplication1._1781006u1DataSet1()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.PermitionTableAdapter = New WindowsApplication1._1781006u1DataSet1TableAdapters.permitionTableAdapter()
-        CType(Me._1781006u1DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PermitionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._1781006u1DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -60,7 +60,7 @@ Partial Class login
         'txtUser
         '
         Me.txtUser.Location = New System.Drawing.Point(233, 67)
-        Me.txtUser.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUser.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(190, 20)
         Me.txtUser.TabIndex = 2
@@ -68,7 +68,7 @@ Partial Class login
         'txtPass
         '
         Me.txtPass.Location = New System.Drawing.Point(233, 166)
-        Me.txtPass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(190, 20)
         Me.txtPass.TabIndex = 3
@@ -76,7 +76,7 @@ Partial Class login
         'btLogin
         '
         Me.btLogin.Location = New System.Drawing.Point(359, 264)
-        Me.btLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btLogin.Margin = New System.Windows.Forms.Padding(2)
         Me.btLogin.Name = "btLogin"
         Me.btLogin.Size = New System.Drawing.Size(56, 19)
         Me.btLogin.TabIndex = 4
@@ -89,11 +89,21 @@ Partial Class login
         Me.txtRole.DisplayMember = "name"
         Me.txtRole.FormattingEnabled = True
         Me.txtRole.Location = New System.Drawing.Point(233, 225)
-        Me.txtRole.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtRole.Margin = New System.Windows.Forms.Padding(2)
         Me.txtRole.Name = "txtRole"
         Me.txtRole.Size = New System.Drawing.Size(92, 21)
         Me.txtRole.TabIndex = 5
         Me.txtRole.ValueMember = "name"
+        '
+        'PermitionBindingSource
+        '
+        Me.PermitionBindingSource.DataMember = "permition"
+        Me.PermitionBindingSource.DataSource = Me._1781006u1DataSet1
+        '
+        '_1781006u1DataSet1
+        '
+        Me._1781006u1DataSet1.DataSetName = "_1781006u1DataSet1"
+        Me._1781006u1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label3
         '
@@ -104,16 +114,6 @@ Partial Class login
         Me.Label3.Size = New System.Drawing.Size(61, 13)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Chức Danh"
-        '
-        '_1781006u1DataSet1
-        '
-        Me._1781006u1DataSet1.DataSetName = "_1781006u1DataSet1"
-        Me._1781006u1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PermitionBindingSource
-        '
-        Me.PermitionBindingSource.DataMember = "permition"
-        Me.PermitionBindingSource.DataSource = Me._1781006u1DataSet1
         '
         'PermitionTableAdapter
         '
@@ -131,11 +131,11 @@ Partial Class login
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "login"
         Me.Text = "login"
-        CType(Me._1781006u1DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PermitionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._1781006u1DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

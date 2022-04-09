@@ -24,10 +24,14 @@
     End Sub
 
     Private Sub NhanVienToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NhanVienToolStripMenuItem.Click
-        Dim frm As frmNhanVien = New frmNhanVien()
-        frm.MdiParent = Me
-        frm.WindowState = FormWindowState.Maximized
-        frm.Show()
+        If String.Equals(Loginfor.Role, "Admin") Then
+            Dim frm As frmNhanVien = New frmNhanVien()
+            frm.MdiParent = Me
+            frm.WindowState = FormWindowState.Maximized
+            frm.Show()
+        Else
+            MessageBox.Show("Ban Khong quyen truy cap")
+        End If
     End Sub
 
     Private Sub DanhMucToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DanhMucToolStripMenuItem.Click
@@ -60,5 +64,29 @@
         frm.MdiParent = Me
         frm.WindowState = FormWindowState.Maximized
         frm.Show()
+    End Sub
+
+    Private Sub SanPhamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SanPhamToolStripMenuItem.Click
+        Loginfor.Role = "Admin"
+        If String.Equals(Loginfor.Role, "Admin") Or String.Equals(Loginfor.Role, "NhapLieu") Then
+            Dim frm As FrmSanPham = New FrmSanPham()
+            frm.MdiParent = Me
+            frm.WindowState = FormWindowState.Maximized
+            frm.Show()
+        Else
+            MessageBox.Show("Ban Khong quyen truy cap")
+        End If
+    End Sub
+
+    Private Sub LoaiSanPhamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoaiSanPhamToolStripMenuItem.Click
+        Loginfor.Role = "Admin"
+        If String.Equals(Loginfor.Role, "Admin") Or String.Equals(Loginfor.Role, "NhapLieu") Then
+            Dim frm As FrmLoaiSanPham = New FrmLoaiSanPham()
+            frm.MdiParent = Me
+            frm.WindowState = FormWindowState.Maximized
+            frm.Show()
+        Else
+            MessageBox.Show("Ban Khong quyen truy cap")
+        End If
     End Sub
 End Class

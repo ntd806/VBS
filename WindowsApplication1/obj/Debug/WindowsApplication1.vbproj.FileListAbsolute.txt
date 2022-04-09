@@ -20,3 +20,6 @@ D:\c#\VBS\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.CoreCompileIn
 D:\c#\VBS\WindowsApplication1\obj\Debug\WindowsApplication1.exe
 D:\c#\VBS\WindowsApplication1\obj\Debug\WindowsApplication1.xml
 D:\c#\VBS\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+D:\c#\VBS\WindowsApplication1\obj\Debug\WindowsApplication1.FrmSanPham.resources
+D:\c#\VBS\WindowsApplication1\obj\Debug\WindowsApplication1.Form3.resources
+D:\c#\VBS\WindowsApplication1\obj\Debug\WindowsApplication1.FrmLoaiSanPham.resources

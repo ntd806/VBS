@@ -79,6 +79,12 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmChiNhanh.Designer.vb">
       <DependentUpon>frmChiNhanh.vb</DependentUpon>
     </Compile>
@@ -104,6 +110,12 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmLoaiSanPham.Designer.vb">
+      <DependentUpon>FrmLoaiSanPham.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoaiSanPham.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMenuChiNhanh.Designer.vb">
       <DependentUpon>frmMenuChiNhanh.vb</DependentUpon>
     </Compile>
@@ -120,6 +132,12 @@
       <DependentUpon>frmNhanVien.vb</DependentUpon>
     </Compile>
     <Compile Include="frmNhanVien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSanPham.Designer.vb">
+      <DependentUpon>FrmSanPham.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSanPham.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.Designer.vb">
@@ -172,10 +190,38 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_1781006u1DataSet21.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_1781006u1DataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1781006u1DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1781006u1DataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1781006u1DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1781006u1DataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1781006u1DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1781006u1DataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1781006u1DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1781006u1DataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1781006u1DataSet7.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmChiNhanh.resx">
       <DependentUpon>frmChiNhanh.vb</DependentUpon>
@@ -189,6 +235,9 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoaiSanPham.resx">
+      <DependentUpon>FrmLoaiSanPham.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenuChiNhanh.resx">
       <DependentUpon>frmMenuChiNhanh.vb</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSanPham.resx">
+      <DependentUpon>FrmSanPham.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
@@ -251,6 +303,61 @@
     </None>
     <None Include="_1781006u1DataSet21.xss">
       <DependentUpon>_1781006u1DataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet3.xsc">
+      <DependentUpon>_1781006u1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1781006u1DataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1781006u1DataSet3.xss">
+      <DependentUpon>_1781006u1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet4.xsc">
+      <DependentUpon>_1781006u1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1781006u1DataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1781006u1DataSet4.xss">
+      <DependentUpon>_1781006u1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet5.xsc">
+      <DependentUpon>_1781006u1DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1781006u1DataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1781006u1DataSet5.xss">
+      <DependentUpon>_1781006u1DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet6.xsc">
+      <DependentUpon>_1781006u1DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1781006u1DataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1781006u1DataSet6.xss">
+      <DependentUpon>_1781006u1DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet7.xsc">
+      <DependentUpon>_1781006u1DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_1781006u1DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1781006u1DataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1781006u1DataSet7.xss">
+      <DependentUpon>_1781006u1DataSet7.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

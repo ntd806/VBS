@@ -20,4 +20,5 @@
         Me.PermitionTableAdapter.Fill(Me._1781006u1DataSet1.permition)
 
     End Sub
+
 End Class
