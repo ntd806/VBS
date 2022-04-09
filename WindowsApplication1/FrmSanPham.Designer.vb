@@ -24,6 +24,17 @@ Partial Class FrmSanPham
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CateidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PriceDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SizeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HeightDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WidthDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WeightDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CreatedatDataGridViewImageColumn = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.UpdateatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProductBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me._1781006u1DataSet3 = New WindowsApplication1._1781006u1DataSet3()
         Me.ProductTableAdapter = New WindowsApplication1._1781006u1DataSet3TableAdapters.productTableAdapter()
@@ -49,23 +60,12 @@ Partial Class FrmSanPham
         Me.txtId = New System.Windows.Forms.TextBox()
         Me.txtPrice = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.UpdateatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CreatedatDataGridViewImageColumn = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.WeightDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.WidthDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.HeightDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SizeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PriceDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CateidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._1781006u1DataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoryBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._1781006u1DataSet5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -76,6 +76,101 @@ Partial Class FrmSanPham
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1352, 368)
         Me.Panel1.TabIndex = 0
+        '
+        'DataGridView3
+        '
+        Me.DataGridView3.AutoGenerateColumns = False
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdDataGridViewTextBoxColumn, Me.CateidDataGridViewTextBoxColumn, Me.PriceDataGridViewTextBoxColumn, Me.NameDataGridViewTextBoxColumn, Me.SizeDataGridViewTextBoxColumn, Me.HeightDataGridViewTextBoxColumn, Me.WidthDataGridViewTextBoxColumn, Me.WeightDataGridViewTextBoxColumn, Me.CreatedatDataGridViewImageColumn, Me.UpdateatDataGridViewTextBoxColumn})
+        Me.DataGridView3.DataSource = Me.ProductBindingSource
+        Me.DataGridView3.Location = New System.Drawing.Point(11, 4)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.RowHeadersWidth = 51
+        Me.DataGridView3.Size = New System.Drawing.Size(1310, 364)
+        Me.DataGridView3.TabIndex = 0
+        '
+        'IdDataGridViewTextBoxColumn
+        '
+        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "id"
+        Me.IdDataGridViewTextBoxColumn.HeaderText = "id"
+        Me.IdDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
+        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IdDataGridViewTextBoxColumn.Width = 125
+        '
+        'CateidDataGridViewTextBoxColumn
+        '
+        Me.CateidDataGridViewTextBoxColumn.DataPropertyName = "cate_id"
+        Me.CateidDataGridViewTextBoxColumn.HeaderText = "cate_id"
+        Me.CateidDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CateidDataGridViewTextBoxColumn.Name = "CateidDataGridViewTextBoxColumn"
+        Me.CateidDataGridViewTextBoxColumn.Width = 125
+        '
+        'PriceDataGridViewTextBoxColumn
+        '
+        Me.PriceDataGridViewTextBoxColumn.DataPropertyName = "price"
+        Me.PriceDataGridViewTextBoxColumn.HeaderText = "price"
+        Me.PriceDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.PriceDataGridViewTextBoxColumn.Name = "PriceDataGridViewTextBoxColumn"
+        Me.PriceDataGridViewTextBoxColumn.Width = 125
+        '
+        'NameDataGridViewTextBoxColumn
+        '
+        Me.NameDataGridViewTextBoxColumn.DataPropertyName = "name"
+        Me.NameDataGridViewTextBoxColumn.HeaderText = "name"
+        Me.NameDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NameDataGridViewTextBoxColumn.Name = "NameDataGridViewTextBoxColumn"
+        Me.NameDataGridViewTextBoxColumn.Width = 125
+        '
+        'SizeDataGridViewTextBoxColumn
+        '
+        Me.SizeDataGridViewTextBoxColumn.DataPropertyName = "size"
+        Me.SizeDataGridViewTextBoxColumn.HeaderText = "size"
+        Me.SizeDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.SizeDataGridViewTextBoxColumn.Name = "SizeDataGridViewTextBoxColumn"
+        Me.SizeDataGridViewTextBoxColumn.Width = 125
+        '
+        'HeightDataGridViewTextBoxColumn
+        '
+        Me.HeightDataGridViewTextBoxColumn.DataPropertyName = "height"
+        Me.HeightDataGridViewTextBoxColumn.HeaderText = "height"
+        Me.HeightDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.HeightDataGridViewTextBoxColumn.Name = "HeightDataGridViewTextBoxColumn"
+        Me.HeightDataGridViewTextBoxColumn.Width = 125
+        '
+        'WidthDataGridViewTextBoxColumn
+        '
+        Me.WidthDataGridViewTextBoxColumn.DataPropertyName = "width"
+        Me.WidthDataGridViewTextBoxColumn.HeaderText = "width"
+        Me.WidthDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.WidthDataGridViewTextBoxColumn.Name = "WidthDataGridViewTextBoxColumn"
+        Me.WidthDataGridViewTextBoxColumn.Width = 125
+        '
+        'WeightDataGridViewTextBoxColumn
+        '
+        Me.WeightDataGridViewTextBoxColumn.DataPropertyName = "weight"
+        Me.WeightDataGridViewTextBoxColumn.HeaderText = "weight"
+        Me.WeightDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.WeightDataGridViewTextBoxColumn.Name = "WeightDataGridViewTextBoxColumn"
+        Me.WeightDataGridViewTextBoxColumn.Width = 125
+        '
+        'CreatedatDataGridViewImageColumn
+        '
+        Me.CreatedatDataGridViewImageColumn.DataPropertyName = "created_at"
+        Me.CreatedatDataGridViewImageColumn.HeaderText = "created_at"
+        Me.CreatedatDataGridViewImageColumn.MinimumWidth = 6
+        Me.CreatedatDataGridViewImageColumn.Name = "CreatedatDataGridViewImageColumn"
+        Me.CreatedatDataGridViewImageColumn.ReadOnly = True
+        Me.CreatedatDataGridViewImageColumn.Width = 125
+        '
+        'UpdateatDataGridViewTextBoxColumn
+        '
+        Me.UpdateatDataGridViewTextBoxColumn.DataPropertyName = "update_at"
+        Me.UpdateatDataGridViewTextBoxColumn.HeaderText = "update_at"
+        Me.UpdateatDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.UpdateatDataGridViewTextBoxColumn.Name = "UpdateatDataGridViewTextBoxColumn"
+        Me.UpdateatDataGridViewTextBoxColumn.Width = 125
         '
         'ProductBindingSource
         '
@@ -284,101 +379,6 @@ Partial Class FrmSanPham
         Me.Label6.TabIndex = 19
         Me.Label6.Text = "price"
         '
-        'UpdateatDataGridViewTextBoxColumn
-        '
-        Me.UpdateatDataGridViewTextBoxColumn.DataPropertyName = "update_at"
-        Me.UpdateatDataGridViewTextBoxColumn.HeaderText = "update_at"
-        Me.UpdateatDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.UpdateatDataGridViewTextBoxColumn.Name = "UpdateatDataGridViewTextBoxColumn"
-        Me.UpdateatDataGridViewTextBoxColumn.Width = 125
-        '
-        'CreatedatDataGridViewImageColumn
-        '
-        Me.CreatedatDataGridViewImageColumn.DataPropertyName = "created_at"
-        Me.CreatedatDataGridViewImageColumn.HeaderText = "created_at"
-        Me.CreatedatDataGridViewImageColumn.MinimumWidth = 6
-        Me.CreatedatDataGridViewImageColumn.Name = "CreatedatDataGridViewImageColumn"
-        Me.CreatedatDataGridViewImageColumn.ReadOnly = True
-        Me.CreatedatDataGridViewImageColumn.Width = 125
-        '
-        'WeightDataGridViewTextBoxColumn
-        '
-        Me.WeightDataGridViewTextBoxColumn.DataPropertyName = "weight"
-        Me.WeightDataGridViewTextBoxColumn.HeaderText = "weight"
-        Me.WeightDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.WeightDataGridViewTextBoxColumn.Name = "WeightDataGridViewTextBoxColumn"
-        Me.WeightDataGridViewTextBoxColumn.Width = 125
-        '
-        'WidthDataGridViewTextBoxColumn
-        '
-        Me.WidthDataGridViewTextBoxColumn.DataPropertyName = "width"
-        Me.WidthDataGridViewTextBoxColumn.HeaderText = "width"
-        Me.WidthDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.WidthDataGridViewTextBoxColumn.Name = "WidthDataGridViewTextBoxColumn"
-        Me.WidthDataGridViewTextBoxColumn.Width = 125
-        '
-        'HeightDataGridViewTextBoxColumn
-        '
-        Me.HeightDataGridViewTextBoxColumn.DataPropertyName = "height"
-        Me.HeightDataGridViewTextBoxColumn.HeaderText = "height"
-        Me.HeightDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.HeightDataGridViewTextBoxColumn.Name = "HeightDataGridViewTextBoxColumn"
-        Me.HeightDataGridViewTextBoxColumn.Width = 125
-        '
-        'SizeDataGridViewTextBoxColumn
-        '
-        Me.SizeDataGridViewTextBoxColumn.DataPropertyName = "size"
-        Me.SizeDataGridViewTextBoxColumn.HeaderText = "size"
-        Me.SizeDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.SizeDataGridViewTextBoxColumn.Name = "SizeDataGridViewTextBoxColumn"
-        Me.SizeDataGridViewTextBoxColumn.Width = 125
-        '
-        'NameDataGridViewTextBoxColumn
-        '
-        Me.NameDataGridViewTextBoxColumn.DataPropertyName = "name"
-        Me.NameDataGridViewTextBoxColumn.HeaderText = "name"
-        Me.NameDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.NameDataGridViewTextBoxColumn.Name = "NameDataGridViewTextBoxColumn"
-        Me.NameDataGridViewTextBoxColumn.Width = 125
-        '
-        'PriceDataGridViewTextBoxColumn
-        '
-        Me.PriceDataGridViewTextBoxColumn.DataPropertyName = "price"
-        Me.PriceDataGridViewTextBoxColumn.HeaderText = "price"
-        Me.PriceDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PriceDataGridViewTextBoxColumn.Name = "PriceDataGridViewTextBoxColumn"
-        Me.PriceDataGridViewTextBoxColumn.Width = 125
-        '
-        'CateidDataGridViewTextBoxColumn
-        '
-        Me.CateidDataGridViewTextBoxColumn.DataPropertyName = "cate_id"
-        Me.CateidDataGridViewTextBoxColumn.HeaderText = "cate_id"
-        Me.CateidDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.CateidDataGridViewTextBoxColumn.Name = "CateidDataGridViewTextBoxColumn"
-        Me.CateidDataGridViewTextBoxColumn.Width = 125
-        '
-        'IdDataGridViewTextBoxColumn
-        '
-        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "id"
-        Me.IdDataGridViewTextBoxColumn.HeaderText = "id"
-        Me.IdDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
-        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IdDataGridViewTextBoxColumn.Width = 125
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.AutoGenerateColumns = False
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdDataGridViewTextBoxColumn, Me.CateidDataGridViewTextBoxColumn, Me.PriceDataGridViewTextBoxColumn, Me.NameDataGridViewTextBoxColumn, Me.SizeDataGridViewTextBoxColumn, Me.HeightDataGridViewTextBoxColumn, Me.WidthDataGridViewTextBoxColumn, Me.WeightDataGridViewTextBoxColumn, Me.CreatedatDataGridViewImageColumn, Me.UpdateatDataGridViewTextBoxColumn})
-        Me.DataGridView3.DataSource = Me.ProductBindingSource
-        Me.DataGridView3.Location = New System.Drawing.Point(11, 4)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.RowHeadersWidth = 51
-        Me.DataGridView3.Size = New System.Drawing.Size(1310, 364)
-        Me.DataGridView3.TabIndex = 0
-        '
         'FrmSanPham
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -408,11 +408,11 @@ Partial Class FrmSanPham
         Me.Name = "FrmSanPham"
         Me.Text = "FrmSanPham"
         Me.Panel1.ResumeLayout(False)
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me._1781006u1DataSet3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CategoryBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me._1781006u1DataSet5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

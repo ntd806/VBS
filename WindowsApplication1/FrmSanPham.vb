@@ -51,4 +51,20 @@
         Me.Hide()
         frm.Show()
     End Sub
+
+    Private Sub btDelete_Click(sender As Object, e As EventArgs) Handles btDelete.Click
+        Dim nhanvien = getProduct()
+        If (txtId.Text = String.Empty) Then
+            MessageBox.Show("Khong duoc de trong id")
+        End If
+        Dim sql As String = "DELETE FROM  product  where id = " + nhanvien.id.ToString()
+        If (XL_DuLieu.ThucHienLenh(sql) = 1) Then
+            Dim frm As frmNhanVien = New frmNhanVien()
+            frm.WindowState = FormWindowState.Maximized
+            Me.Hide()
+            frm.Show()
+        Else
+            MessageBox.Show("Khong thanh cong")
+        End If
+    End Sub
 End Class
