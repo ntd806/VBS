@@ -29,12 +29,22 @@ Partial Class login
         Me.txtPass = New System.Windows.Forms.TextBox()
         Me.btLogin = New System.Windows.Forms.Button()
         Me.txtRole = New System.Windows.Forms.ComboBox()
+        Me.PermitionBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataSet1 = New WindowsApplication1.DataSet1()
         Me.PermitionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me._1781006u1DataSet1 = New WindowsApplication1._1781006u1DataSet1()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PermitionTableAdapter = New WindowsApplication1._1781006u1DataSet1TableAdapters.permitionTableAdapter()
+        Me.PermitionTableAdapter1 = New WindowsApplication1.DataSet1TableAdapters.permitionTableAdapter()
+        Me.HotelDataSet = New WindowsApplication1.hotelDataSet()
+        Me.PermitionBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PermitionTableAdapter2 = New WindowsApplication1.hotelDataSetTableAdapters.permitionTableAdapter()
+        CType(Me.PermitionBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PermitionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._1781006u1DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HotelDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PermitionBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -70,6 +80,7 @@ Partial Class login
         Me.txtPass.Location = New System.Drawing.Point(233, 166)
         Me.txtPass.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPass.Size = New System.Drawing.Size(190, 20)
         Me.txtPass.TabIndex = 3
         '
@@ -85,7 +96,7 @@ Partial Class login
         '
         'txtRole
         '
-        Me.txtRole.DataSource = Me.PermitionBindingSource
+        Me.txtRole.DataSource = Me.PermitionBindingSource2
         Me.txtRole.DisplayMember = "name"
         Me.txtRole.FormattingEnabled = True
         Me.txtRole.Location = New System.Drawing.Point(233, 225)
@@ -94,6 +105,16 @@ Partial Class login
         Me.txtRole.Size = New System.Drawing.Size(92, 21)
         Me.txtRole.TabIndex = 5
         Me.txtRole.ValueMember = "name"
+        '
+        'PermitionBindingSource1
+        '
+        Me.PermitionBindingSource1.DataMember = "permition"
+        Me.PermitionBindingSource1.DataSource = Me.DataSet1
+        '
+        'DataSet1
+        '
+        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'PermitionBindingSource
         '
@@ -119,6 +140,24 @@ Partial Class login
         '
         Me.PermitionTableAdapter.ClearBeforeFill = True
         '
+        'PermitionTableAdapter1
+        '
+        Me.PermitionTableAdapter1.ClearBeforeFill = True
+        '
+        'HotelDataSet
+        '
+        Me.HotelDataSet.DataSetName = "hotelDataSet"
+        Me.HotelDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PermitionBindingSource2
+        '
+        Me.PermitionBindingSource2.DataMember = "permition"
+        Me.PermitionBindingSource2.DataSource = Me.HotelDataSet
+        '
+        'PermitionTableAdapter2
+        '
+        Me.PermitionTableAdapter2.ClearBeforeFill = True
+        '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -134,8 +173,12 @@ Partial Class login
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "login"
         Me.Text = "login"
+        CType(Me.PermitionBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PermitionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me._1781006u1DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HotelDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PermitionBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -151,4 +194,10 @@ Partial Class login
     Friend WithEvents _1781006u1DataSet1 As _1781006u1DataSet1
     Friend WithEvents PermitionBindingSource As BindingSource
     Friend WithEvents PermitionTableAdapter As _1781006u1DataSet1TableAdapters.permitionTableAdapter
+    Friend WithEvents DataSet1 As DataSet1
+    Friend WithEvents PermitionBindingSource1 As BindingSource
+    Friend WithEvents PermitionTableAdapter1 As DataSet1TableAdapters.permitionTableAdapter
+    Friend WithEvents HotelDataSet As hotelDataSet
+    Friend WithEvents PermitionBindingSource2 As BindingSource
+    Friend WithEvents PermitionTableAdapter2 As hotelDataSetTableAdapters.permitionTableAdapter
 End Class

@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 
 Module XL_DuLieu
     '/* Data Source=DESKTOP-M6H7GKA\SQLEXPRESS;Initial Catalog=1781006u1;Integrated Security=True*/
-    Public ChuoiKetNoi As String = "Provider=SQLOLEDB;Data Source=DESKTOP-M6H7GKA\SQLEXPRESS;Initial Catalog=1781006u1;Integrated Security=SSPI"
+    Public ChuoiKetNoi As String = "Provider=SQLOLEDB;Data Source=DESKTOP-FRSOGLR\SQLEXPRESS;Initial Catalog=hotel;Integrated Security=SSPI"
 
     Public Function DocDuLieu(ByVal sql As String) As DataTable
         Dim adapter As OleDbDataAdapter = New OleDbDataAdapter(sql, ChuoiKetNoi)
@@ -49,12 +49,13 @@ Module XL_DuLieu
     End Function
 
     Private Sub CapNhatMaSo(ByVal sender As Object, ByVal e As OleDbRowUpdatedEventArgs)
-        'Dim Ket_noi As OleDbConnection = e.Command.Connection
-        'If e.StatementType = StatementType.Insert Then
-        '    Dim Lenh As OleDbCommand = New OleDbCommand("Select @@IDENTITY", Ket_noi)
-        '    Dim ma_so As Integer = Integer.Parse(Lenh.ExecuteScalar())
-        '    e.Row(0) = ma_so
-        'End If
+        Dim Ket_noi As OleDbConnection = e.Command.Connection
+        If e.StatementType = StatementType.Insert Then
+            Dim Lenh As OleDbCommand = New OleDbCommand("Select @@IDENTITY", Ket_noi)
+            Console.WriteLine(Lenh.ExecuteScalar())
+            Dim ma_so As Integer = Integer.Parse(Lenh.ExecuteScalar())
+            e.Row(0) = ma_so
+        End If
     End Sub
 
     Public Sub GhiDuLieu1(ByVal table As String, ByVal dt As DataTable)

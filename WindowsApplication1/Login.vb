@@ -3,10 +3,12 @@
         Loginfor.Username = txtUser.Text
         Loginfor.Password = Util.getHash(txtPass.Text)
         Loginfor.Role = txtRole.Text
-        'MessageBox.Show(pass.ToString())
-        'Dim sql As String = "INSERT INTO customer (username, password) VALUES ('" + Loginfor.Username + "','" + Loginfor.Password + "')"
+
+        'Dim sql As String = "INSERT INTO customer (username, password, role) VALUES ('" + Loginfor.Username + "','" + Loginfor.Password + "', '" + Loginfor.Role + "')"
         Dim sql As String = "SELECT * FROM customer where username= '" + Loginfor.Username + "' and password = '" + Loginfor.Password + "' and role = '" + Loginfor.Role + "'"
-        If (XL_DuLieu.ThucHienLenh(Sql) = -1) Then
+        Console.WriteLine(sql)
+        'Console.WriteLine(XL_DuLieu.ThucHienLenh(sql))
+        If (XL_DuLieu.ThucHienLenh(sql) = -1) Then
             Dim frm As New Form2()
             frm.Show()
             Me.Hide()
@@ -16,9 +18,8 @@
     End Sub
 
     Private Sub login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the '_1781006u1DataSet1.permition' table. You can move, or remove it, as needed.
-        Me.PermitionTableAdapter.Fill(Me._1781006u1DataSet1.permition)
+        'TODO: This line of code loads data into the 'HotelDataSet.permition' table. You can move, or remove it, as needed.
+        Me.PermitionTableAdapter2.Fill(Me.HotelDataSet.permition)
 
     End Sub
-
 End Class
